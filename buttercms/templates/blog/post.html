@@ -1,0 +1,34 @@
+{% extends "blog.html" %}
+
+{% block content %}
+<a href="{{ url_for('blog.home') }}">Blog Home</a>
+<h3>{{ post.title }}</h3>
+<h5>By <a href="{{ url_for('blog.show_author', author_slug=post.author.slug) }}">{{ post.author.first_name }} {{ post.author.last_name }}</a></h5>
+<h6>Posted in 
+{% for category in post.categories %}
+<a href="{{ url_for('blog.show_category', category_slug=category.slug) }}">{{category.name}}</a>
+{% endfor %}
+</h6>
+
+<p>{{ post.body|safe }}</p>
+
+<!--
+// For sharing, we recommend https://www.addthis.com/get/sharing or https://sumome.com/app/share
+-->
+
+<!--
+// For commenting, we recommend https://disqus.com/
+// Create a Disqus account and paste your snippet below
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'XXXXXXXX';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+-->
+{% endblock %}

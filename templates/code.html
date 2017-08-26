@@ -1,0 +1,50 @@
+{% extends "index.html" %} 
+
+{% block title %}Python Apps{% endblock %}
+
+{% block content %}
+
+<header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="/static/img/python.jpeg" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Simple Python Apps</h1>
+                        <hr class="star-light">
+                        <span class="skills">Let's Play!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <h3> Let's Add Some Numbers!</h3>
+
+                    <form action="." method="POST">
+                    <input type="text" name="text">
+                    <input class="btn btn-primary" type="submit" name="my-form" value="Send">
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <p>The languages I work with include HTML, CSS and Python. I work with the Flask Framework for Python development. If you are a non technical person who would like control over your website then I can create a Wordpress website for you. Simplicity, creativity and clarity are the core principles behind my work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+{% endblock %}

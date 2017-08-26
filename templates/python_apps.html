@@ -1,0 +1,89 @@
+{% extends "index.html" %} 
+
+{% block title %}Python Apps{% endblock %}
+
+{% block content %}
+
+   <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="/static/img/python.jpeg" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Simple Python Apps</h1>
+                        <hr class="star-light">
+                        <span class="skills">Let's Play!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+            <!-- Portfolio Grid Section -->
+    
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Simple Python Apps</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                <h1>Addition</h1>
+                    <a href="https://denisflask.herokuapp.com/add_numbers" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/static/img/add_preview.png" target="_blank" class="img-responsive" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                <h1>Shopping List</h1>
+                    <a href="https://denisflask.herokuapp.com/shopping_list" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/static/img/shopping_preview.png" class="img-responsive" alt="Slice of cake">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                <h1>Current Time</h1>
+                    <a href="https://denisflask.herokuapp.com/time" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/static/img/time_preview.png" class="img-responsive" alt="Circus tent">
+                    </a>
+                </div>      
+            </div>
+        </div>
+    </section>
+
+         <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2></h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>The languages I work with include: HTML, CSS & Python. I work with the Flask Framework for Python development. If you are a non technical person who would like control over your website then I can create a Wordpress website for you. Simplicity, creativity and clarity are the core principles behind my work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock%}
