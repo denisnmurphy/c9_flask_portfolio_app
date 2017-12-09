@@ -1,14 +1,12 @@
 from flask import Flask, render_template, request, redirect
 import datetime
 import pytz # timezone 
-import urllib.parse
 import requests
-from butter_cms import ButterCMS
-from buttercms.blog_blueprint import blog
+import os
+
+
 
 app = Flask(__name__)
-
-app.register_blueprint(blog, url_prefix='/blog')
 
 
 @app.route('/', methods=['GET'])
@@ -94,6 +92,7 @@ def contact():
 def blog_page():
   return render_template('blog.html')
 
+app.run(host=os.getenv('IP', '0.0.0.0'), port = int(os.getenv('PORT', 8080)))
 
 if __name__ == '__main__':
 	app.run(debug=False)
